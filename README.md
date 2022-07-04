@@ -1,7 +1,7 @@
 Near Price Oracle Converter
 ===
 
-Proxy contract build on top of [NEAR Native price oracle](https://github.com/NearDeFi/price-oracle).
+Proxy contract built on top of [NEAR Native price oracle](https://github.com/NearDeFi/price-oracle).
 
 Use the Near Price Oracle Converter to request asset prices, convert assets using current exchange rates, and provide this data to a designated recipient.
 
