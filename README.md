@@ -55,7 +55,7 @@ near call $CONTRACT_ID convert '{
         \\"kind\\": { 
             \\"Transfer\\": { 
                 \\"token_id\\": \\"\\", 
-                \\"receiver_id\\": \\"\\", 
+                \\"receiver_id\\": \\"%SIGNER_ID%\\", 
                 \\"amount\\": \\"%AMOUNT%\\" 
                     } 
                 } 

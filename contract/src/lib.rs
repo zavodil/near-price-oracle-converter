@@ -126,7 +126,7 @@ impl Contract {
 	}
 
 	pub fn get_whitelisted_methods(&self, account_id: AccountId) -> Vec<MethodName> {
-		self.whitelist.get(&account_id).unwrap_or(vec![])
+		self.whitelist.get(&account_id).unwrap_or_default()
 	}
 }
 

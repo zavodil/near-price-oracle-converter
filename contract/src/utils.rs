@@ -54,11 +54,11 @@ impl Contract {
     }
 
     pub fn internal_get_deposit(&self, account_id: &AccountId) -> Balance {
-        self.deposits.get(&account_id).unwrap_or_default()
+        self.deposits.get(account_id).unwrap_or_default()
     }
 
     pub fn internal_get_asset(&self, asset_id: &AccountId, asset_price: &Price, amount: Balance) -> (String, f64, f64){
-        if let Some(config) = self.config.get(&asset_id) {
+        if let Some(config) = self.config.get(asset_id) {
             (
                 config.token_name,
                 asset_price.multiplier as f64 / (10u128.pow((asset_price.decimals - config.decimals) as u32)) as f64,
@@ -77,7 +77,7 @@ impl Contract {
     /* get master account for subaccounts */
     pub fn get_master_account(&self, account_id: &AccountId) -> AccountId {
         let account: String = account_id.to_string();
-        let parts: Vec<&str> = account.split(".").collect();
+        let parts: Vec<&str> = account.split('.').collect();
         let parts_count = parts.to_owned().clone().len();
 
         if parts_count <= 2 {
