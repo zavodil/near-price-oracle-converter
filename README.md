@@ -20,9 +20,9 @@ receiver_gas: Option<Gas>,
 
 **Keywords in args to be overwritten**
 
-- `%AMOUNT%` - amount received after the conversion
-- `%EXCHANGE_INFO%` - log of the exchange
-- `%RATE_INFO%` - log of the exchange rates
+- `%AMOUNT%` - amount received after conversion
+- `%EXCHANGE_INFO%` - exchange log
+- `%RATE_INFO%` - log of exchange rates
 - `%SIGNER_ID%` - user account 
 - `%CONVERTER_ID%` - converter account
 - `%ORACLE_ID%` - oracle account 
